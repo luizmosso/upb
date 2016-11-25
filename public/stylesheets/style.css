@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script|PT+Sans|Montserrat');
+
+body {
+	font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+	margin:0;
+	overflow:hidden;
+}
+
+#alignment{
+	margin: 0 auto;
+	max-width: 800px;
+}
+
+.Container{
+	position: absolute;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;      
+}
+
+.box{
+    position: absolute;
+    height: 200%;
+    width: 100%;
+    margin: 0 auto;    
+    max-width: 800px;
+    top: 0;
+    opacity: 0;
+}
+
+.ContainerHalf{
+	width: 	100%;
+	height: 50%;
+}
+
+.catContent{
+    text-align: center;  
+    background: rgba(250,252,255,1);
+    background: -moz-linear-gradient(-45deg, rgba(250,252,255,1) 0%, rgba(228,233,247,1) 41%, rgba(220,238,250,1) 53%, rgba(252,252,252,1) 100%);
+    background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(250,252,255,1)), color-stop(41%, rgba(228,233,247,1)), color-stop(53%, rgba(220,238,250,1)), color-stop(100%, rgba(252,252,252,1)));
+    background: -webkit-linear-gradient(-45deg, rgba(250,252,255,1) 0%, rgba(228,233,247,1) 41%, rgba(220,238,250,1) 53%, rgba(252,252,252,1) 100%);
+    background: -o-linear-gradient(-45deg, rgba(250,252,255,1) 0%, rgba(228,233,247,1) 41%, rgba(220,238,250,1) 53%, rgba(252,252,252,1) 100%);
+    background: -ms-linear-gradient(-45deg, rgba(250,252,255,1) 0%, rgba(228,233,247,1) 41%, rgba(220,238,250,1) 53%, rgba(252,252,252,1) 100%);
+    background: linear-gradient(135deg, rgba(250,252,255,1) 0%, rgba(228,233,247,1) 41%, rgba(220,238,250,1) 53%, rgba(252,252,252,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fafcff', endColorstr='#fcfcfc', GradientType=1 );
+}
+
+.catBlockContent{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.catBlock{
+	width: 100%;
+	height: 15%;
+	color: #FFFFFF;
+	font-size: 24px;
+	text-align: center;
+	position: relative;
+    line-height: 10%;
+    top: 30px;
+    display:table;
+    font-family: 'PT Sans', sans-serif;    
+}
+#mainQuote{
+    position: relative;
+    top: 80px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 20px;
+    font-weight: bold;
+    width: 100%;
+    max-width: 360px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#mainQuote p:last-child{
+    text-align: right;
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+.catBlock:hover{
+	cursor:pointer;
+	opacity: 0.75;
+}
+
+.catConheca{background-color: #42A5F5;}
+.catColabore{background-color: #f06292; }
+.catParticipe{background-color: #66bb6a;}
+
+.up_arrow{
+    background: url('../images/up_arrow.svg');
+    background-size: 100% 100%;
+    height: 20px;
+    width: 20px;  
+    z-index: 20002;
+    position:absolute;
+    left: 5%;
+    top: 35px;
+    opacity: 0;
+}
+
+.logoContainer{
+    height: 35%;
+    width: 100%;
+    margin:0 auto;
+}
+#upb_logo{
+    height: 100%;
+    margin:0 auto;
+}
+
+.logo_mini{
+    background: url('../images/logo_mini.png');
+    background-size: 100% 100%;    
+    position: absolute;
+    right: 10px;
+    top: 25px;
+    width: 80px;
+    height: 26px;
+    opacity: 0;
+}
+
+.imgBig{
+    width: 100%;
+    height: 100%;
+    max-width: 800px;   
+    /*border-radius: 7px;  */
+}
+
+.page{    
+    display: none;
+    opacity: 0;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    font-size: 18px;
+    font-family: 'Montserrat' sans-serif;
+    overflow-y: scroll;
+    height: 100%;
+    max-height: 600px;
+}
+
+.page .container{
+    max-width: 800px;
+    width: 100%;
+}
+
+.briefing{
+    line-height: 18px;
+    background-color: white;
+    color: #42a5f5;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 24px;
+    line-height: 24px;    
+}
