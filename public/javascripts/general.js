@@ -59,10 +59,8 @@ var Category_Click = function(){
 
           $(categoria).animate({'height':'15%'}, 400, function(){            
             $(selCatBlock).css({'opacity': '1'});  
-            $(box).animate({ top : '0' }, 800, function(){
-              
-            });                       
-            $(categoria).find('.logo_mini').animate({'opacity' : '0'}, 300 );  
+            $(box).animate({ top : '0' }, 800);
+            $(categoria).find('.logo_mini').animate({'opacity' : '0'}, 300);  
             $(categoria).animate({ 'top' : '30px' }, 800, function(){         
               $(this).find('.catBlockContent').css({'display': 'table-cell', 'margin-top' : 'auto'});          
               $(this).find(selUpArrow).animate({'opacity' : '0'}, 500 );            

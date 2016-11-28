@@ -1,4 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Dancing+Script|PT+Sans|Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script|PT+Sans|Montserrat|Open+Sans');
+
+@media only screen and (max-width: 500px) {
+ .imgAuxilio { font-size: 10px;}   
+ .icLabel{ font-size: 16px !important; }
+}
 
 body {
 	font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
@@ -144,7 +149,7 @@ body {
     margin-top: 30px;
     padding-bottom: 10px;
     font-size: 18px;
-    font-family: 'Montserrat' sans-serif;
+    font-family: 'Open Sans', sans-serif !important;
     overflow-y: scroll;
     height: 100%;
     max-height: 600px;
@@ -153,14 +158,122 @@ body {
 .page .container{
     max-width: 800px;
     width: 100%;
+    padding-bottom: 30px;
 }
 
-.briefing{
-    line-height: 18px;
+.secPrincipal{
     background-color: white;
     color: #42a5f5;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    font-size: 18px;
+    line-height: 1.6;      
+}
+
+.secTitle{      
+    height: 40px;
+    font-size: 40px;
+    font-weight: 600; 
+    line-height: 40px;
+    padding-bottom: 30px;
+}
+
+.secAuxilio{
+    padding-top: 40px;
+    padding-bottom: 20px;
+    font-size: 18px;
+    line-height: 1.6;  
+    background-color: #F06292;    
+}
+
+.imgAuxilio{  
+    text-align: center;
+    line-height: 15px;
+}
+
+.imgAuxilio img{
+    height: 100%;
+    max-height: 100px;
+    width: 100%;
+    max-width: 100px;
+    margin-bottom: 10px;        
+    margin-top: 15px; 
+    margin: 0 auto;
+}
+
+.secHistoria{
+    background-color: #EBE4DC;
+    color: #333333;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    font-size: 18px;
+    line-height: 1.6;      
+}
+
+.secProjetos{
+    background-color: #333333;    
+    padding-top: 40px;
+    padding-bottom: 20px;
+    font-size: 18px;
+    line-height: 18px !important;      
+    text-align: left;
+}
+.secProjetos .secTitle{
+    text-align: center;
+}
+
+.icInfo{
+    height: 50px;
+    width: 50px;
+    border: 3px dotted white;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 1000px;
+    font-size: 35px;
+    background-color: #f06292;
+    font-weight: bold;
+    font-family: Arial !important;
+}
+
+.icInfo:hover{
+    background-color: #42A5F5;
+}
+
+.icLabel{
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    white-space: nowrap;
+    font-size: 24px;
+    padding-left: 20px;
+}
+
+.secEventos{
+    background-color: white;    
     padding-top: 20px;
     padding-bottom: 20px;
-    font-size: 24px;
-    line-height: 24px;    
+    font-size: 18px;
+    line-height: 18px;      
+    text-align: left;
+    color: #333333;
+}
+.secEventos .secTitle{
+    text-align: center;
+    padding-bottom: 20px;
+    color: #66bb6a;
+}
+
+.secEventos .row, .secEventos p{
+    padding: 0;
+    margin: 0;
+}
+
+.secEventos p {
+    height: 100px;
+    line-height: 100px;
+    margin-left: 10px;
+}
+.imgEventos{
+    height: 100px;
+    width: 100px;
 }
