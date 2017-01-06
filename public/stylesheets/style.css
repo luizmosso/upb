@@ -1,10 +1,21 @@
-@import url('https://fonts.googleapis.com/css?family=Dancing+Script|PT+Sans|Montserrat|Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script|PT+Sans|Montserrat|Open+Sans|Gloria+Hallelujah');
 
 @media only screen and (max-width: 500px) {
    .imgAuxilio { font-size: 10px;}   
    .icLabel { font-size: 16px !important; }
-   .imgEventos {height: 35px, width: 35px;}
+   .imgEventos {height: 50px, width: 50px;}
    .secEventos .secContent p {font-size: 12px; }
+   .secContatos { 
+    font-size: 10px !important; 
+    padding-top: 10px !important; 
+    padding-bottom: 10px !important; 
+}
+.imgContatos {width: 20px !important; height: 20px !important;} 
+.secCestaBasica{ font-size: 12px !important; }
+.money{left: -30px !important; }
+.hideRow{ display: block !important; }
+.showedRow{ display: none !important; }
+.imgBigEvento{ padding: 10px; }
 }
 
 body {
@@ -164,18 +175,25 @@ body {
     padding-bottom: 30px;
 }
 
-.secPrincipal{
-    background-color: white;
-    color: #42a5f5;
+.secPrincipal, .secCestaBasica{
+    background-color: white;    
     padding-top: 40px;
     padding-bottom: 20px;
     font-size: 18px;
     line-height: 1.6;      
 }
 
+.blue{
+    color: #42a5f5;
+}
+
+.pink{
+    color: #f06292;
+}
+
 .secTitle{      
     height: 40px;
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 600; 
     line-height: 40px;
     padding-bottom: 30px;
@@ -213,6 +231,24 @@ body {
     line-height: 1.6;      
 }
 
+.secProximoEvento{
+    background-color: #F06292; 
+    color: white;
+    padding-top: 40px;
+    padding-bottom: 100px;
+    font-size: 18px;
+    line-height: 1.6;   
+}
+
+.secQueroParticipar{
+    background-color: #A9CABA;
+    color: white;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    font-size: 18px;
+    line-height: 1.6;   
+}
+
 .secProjetos{
     background-color: #333333;    
     padding-top: 40px;
@@ -224,6 +260,14 @@ body {
 .secProjetos .secTitle{
     text-align: center;
 }
+
+.secFinanceiro{
+    background-color: #333333;  
+    padding-bottom: 20px;
+    font-size: 18px; 
+    line-height: 18px !important; 
+}
+
 
 .icInfo{
     height: 50px;
@@ -272,15 +316,287 @@ body {
 }
 
 .secEventos p {
-    height: 100px;
-    line-height: 100px;
+    height: 100px;    
     margin-left: 10px;
+    margin-top: 15px;
 }
 .imgEventos{
     max-height: 100px;
     max-width: 100px;
     height: 100%;
     width: 100%;
-    min-width: 35px;
-    min-height: 35px;
+    min-width: 50px;
+    min-height: 50px;
+}
+
+.secContatos{
+    font-size: 16px;        
+    margin-bottom: 30px;   
+    padding-top: 30px; 
+    padding-bottom: 30px;   
+    background-color: black;
+}
+
+.secMoney{
+    font-size: 16px;
+    color: #333333;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    background-color: #BDFCDD;        
+}
+
+.secHands{
+    font-size: 16px;
+    color: #333333;
+    padding: 0;
+    background-color: #F9F6EF;    
+}
+
+.colHeart{
+    margin: 0 auto;
+    height: 200px;
+}
+
+.imgContatos{
+    max-height: 40px;
+    max-width: 40px;
+    height: 100%;
+    width: 100%;    
+    margin-left: 0;
+}
+
+.secContatos img, .secContatos div {
+    display: inline;
+    padding : 0 !important;
+    margin : 0 !important;
+}
+
+.secContatos div{
+    padding : 0 !important;
+    margin : 0 !important;
+}
+
+.alignLeft{
+    text-align: left;
+}
+
+.alignCenter{
+    text-align: center;
+    margin: 0 auto;
+}
+
+.alignRight{
+    text-align: right;
+}
+
+
+/* Money turns to heart */
+
+.money{
+  width: 200px;
+  height: 100px;
+  background-color: #009444;
+  position: relative;
+  margin-top: 10px;
+  left: 70px;
+}
+
+.smallCircle{
+  width: 30px;
+  height: 30px;
+}
+
+.bigCircle{
+  width: 55px;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+  font-family: Helvetica;
+  font-weight: bold;
+  font-size: 50px;
+  color: #004C28;
+}
+
+.circle{
+  background-color: #FC5574;
+  border-radius: 100px;
+  position: absolute;  
+  background-color: #009444;
+}
+
+.lb, .rb{
+  bottom: 0;
+}
+
+.rt, .rb{
+  right: 0;
+}
+
+.square{
+  background-color: #006838;
+  width: 180px;
+  height: 80px;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+
+.lCircle, .rCircle{
+  top:35px;
+}
+
+.lCircle{
+  left: 30px;
+}
+
+.rCircle{
+  right: 30px;
+}
+
+.mCircle{
+  left: 75px;
+  top: 20px
+}
+
+.clickBox{
+  display: table;
+}
+
+
+.click, .arrowBox{
+  display: table-cell;
+}
+
+.click{
+  height: 30px;
+  font-family: 'Gloria Hallelujah', cursive;
+  font-size: 20px;  
+}
+
+.arrowBox{
+  border: 4px dotted #FC5574;
+  width: 35px;  
+  border-left: none;
+  border-bottom: none;
+  border-radius: 1000px;  
+  position: relative;
+}
+
+.arrow{
+  position: absolute;
+  bottom: -2px;
+  margin-left: 12px;
+  z-index: 1000;  
+  font-size: 20px;
+  color: red;
+  
+  -ms-transform: rotate(40deg); 
+  -webkit-transform: rotate(40deg); 
+  transform: rotate(40deg);
+}
+
+.money:hover{
+  cursor: pointer;
+}
+
+.heart{
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  width: 100px;
+  -ms-transform: rotate(45deg); 
+  -webkit-transform: rotate(45deg); 
+  transform: rotate(45deg);
+  background-color: #EF133B;
+  margin-top: 50px;  
+  margin-left: 60px;
+  
+  -webkit-animation-name: animation_heart; 
+  -webkit-animation-duration: 1s; 
+  animation-name: animation_heart;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;  
+}
+
+
+@-webkit-keyframes animation_heart{
+    1%  {width: 120px; height: 120px}
+    2%  {width: 100px; height: 100px}
+}
+
+@-webkit-keyframes animation_heartChild{
+    1%  {width: 120px; height: 120px}
+    3%  {width: 100px; height: 100px}
+}
+
+@keyframes animation_heart{
+    1%  {width: 110px; height: 110px}
+    3%  {width: 100px; height: 100px}
+}
+
+@keyframes animation_heartChild{
+    1%  {width: 110px; height: 110px}
+    3%  {width: 100px; height: 100px}
+}
+
+
+.heart *{
+  opacity: 0;
+  background-color: #EF133B;
+  -webkit-transition: width 1s, height 1s, top 1s, left 1s;
+  transition: width 1s, height 1s, top 1s, left 1s;
+  -webkit-animation-name: animation_heartChild; 
+  -webkit-animation-duration: 1s; 
+  animation-name: animation_heartChild;
+  animation-duration: 1s;
+  animation-iteration-count: infinite; 
+}
+
+.heart .lCircle, 
+.heart .rCircle{
+  width: 100px;
+  height: 100px;
+  opacity: 1 !important;
+  -webkit-transition: top 0.2s, left 0.2s, width 1.5s, height 1.5s, opacity 1.5s;
+  transition: top 0.2s, left 0.2s, width 1.5s, height 1.5s, opacity 1.5s;
+}
+
+.heart .lCircle{
+  top: 0px;
+  left: -50px;
+}
+
+.heart .rCircle{
+  top: -50px;
+  left: 0px;
+}
+
+.moneyText{
+    opacity: 0;
+    line-height: 16px;
+}
+
+.imgTruck{
+    height: 200px;
+    width: 200px;
+}
+
+.hideRow{
+    display: none;
+    font-size: 15px;
+}
+
+.showedRow{
+    display: block;
+    text-align: left;
+}
+
+.imgBigEvento{
+    width: 100%;
+    height: 100%;
+    max-width: 500px;
+    border-radius: 5px;
+}
+
+.secHands .secTitle{
+    margin-top: 50px;
 }

@@ -13,6 +13,7 @@ var selUpArrow 		= dot + clsUpArrow;
 $(document).ready(function(){
 	$('.box').animate({'opacity' : '1'}, 500);
 	Category_Click();
+  Money_Click();
 });
 
 var Category_Click = function(){
@@ -51,8 +52,7 @@ var Category_Click = function(){
   	}
     else{ // If we are retracting
 
-      if ($(e.target).hasClass(clsUpArrow)) {
-        
+      if ($(e.target).hasClass(clsUpArrow)) {        
 
         $(categoria).find('.page').animate({'opacity':'0'}, 300, function(){          
           $(this).css({'display':'none'});
@@ -70,5 +70,21 @@ var Category_Click = function(){
         });     
       }
     }
+  });
+}
+
+var Money_Click = function(){
+  $('.money').bind('click', function(){
+    var money = $(this);
+    var heart = 'heart';
+
+    if(!$(money).hasClass(heart)){
+      $(money).addClass(heart);  
+      $('.moneyText').animate({'opacity' : '1'}, 800 );  
+    }
+    else{
+      $(money).removeClass(heart); 
+      $('.moneyText').animate({'opacity' : '0'}, 500 );  
+    }  
   });
 }
