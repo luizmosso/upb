@@ -1,17 +1,20 @@
 <!DOCTYPE html>
+
 <html>
 <head>
+	<meta charset="UTF-8"> 
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<title>Unidos Pelo Bem</title>	
 	<link rel='stylesheet' href='/stylesheets/jquery-ui.min.css' />
 	<link rel='stylesheet' href='/stylesheets/bootstrap.min.css' />
 	<link rel='stylesheet' href='/stylesheets/style.css' />
+	<link rel="manifest" href="manifest.json">
 	<script type="text/javascript" src='/javascripts/jquery-3.1.1.min.js'></script>
 	<script type="text/javascript" src='/javascripts/jquery-ui.min.js'></script>
 	<script type="text/javascript" src='/javascripts/bootstrap.min.js'></script>
 	<script type="text/javascript" src='/javascripts/general.js'></script>
 </head>
-<body>
+<body>	
 	<div id='alignment'>
 		<div class='ctn'>
 			<div class='box'>				
@@ -87,7 +90,7 @@
 										<div class='row'>
 											<div class='col-xs-12'>
 												<br>
-												<p>Com a proposta de fazer o bem ao próximo, 3 amigos se reuniram numa pequena campanha de arrecadação de alimentos e brinquedos para o Natal de 2013.</p>
+												<p>Com a proposta de fazer o bem ao próximo, 4 amigos se reuniram numa pequena campanha de arrecadação de alimentos e brinquedos para o Natal de 2013.</p>
 												<p>Trabalhando pela meta de 10 cestas básicas, o labor arrecadou centenas de alimentos, roupas, calçados, dinheiro e brinquedos.</p>
 												<br>
 												<p>Hoje os UPB são mais de 40 pessoas :)</p>
@@ -104,7 +107,7 @@
 										</div>		
 										<br>			
 										<br>						
-										<div class='row'>
+										<div class='row rowProjeto'>
 											<div class='col-xs-9'>
 												<p class='icLabel'>Horta Solidária</p>
 											</div>
@@ -112,7 +115,7 @@
 												<div class='icInfo'>?</div>
 											</div>
 										</div>
-										<div class='row'>
+										<div class='row rowProjeto'>
 											<div class='col-xs-9'>
 												<p class='icLabel'>Inclusão Digital</p>
 											</div>
@@ -120,7 +123,7 @@
 												<div class='icInfo'>?</div>
 											</div>
 										</div>
-										<div class='row'>
+										<div class='row rowProjeto'>
 											<div class='col-xs-9'>
 												<p class='icLabel'>Doação de Sangue</p>
 											</div>
@@ -221,7 +224,7 @@
 												<p>Recebemos todo tipo de doações, como alimentos, cestas-básicas, brinquedos, medicamentos, roupas, dinheiro.</p>
 												<p>As doações são 100% revertidos às famílias carentes e os doadores recebem as comprovações através de relatórios mensais.</p>
 												<br>
-												<p>O superfluo de uns é sempre o essencial para outros!</p>
+												<p>O supérfluo de uns é sempre o essencial para outros!</p>
 											</div>
 										</div>	
 									</div>
@@ -251,7 +254,7 @@
 													</p>
 												</div>
 												<div class='col-xs-12'>
-													<p>Já tem a cesta? Buscamos aonde estiver :)</p>
+													<p>Já tem a cesta? Buscamos onde estiver :)</p>
 													<p>O valor médio da cesta é R$ 52,00</p>
 												</div>
 											</div>
@@ -269,15 +272,17 @@
 														<div class='arrow'>▼</div>
 													</div>
 												</div>
-												<div class='money'>
-													<div class='square'></div>
-													<div class='circle smallCircle lt'></div>
-													<div class='circle smallCircle lb'></div>
-													<div class='circle smallCircle rt'></div>
-													<div class='circle smallCircle rb'></div>  
-													<div class='circle smallCircle lCircle'></div>
-													<div class='circle smallCircle rCircle'></div>
-													<div class='circle mCircle bigCircle'>$</div>
+												<div id="heart">
+													<div class='money'>
+														<div class='square'></div>
+														<div class='circle smallCircle lt'></div>
+														<div class='circle smallCircle lb'></div>
+														<div class='circle smallCircle rt'></div>
+														<div class='circle smallCircle rb'></div>  
+														<div class='circle smallCircle lCircle'></div>
+														<div class='circle smallCircle rCircle'></div>
+														<div class='circle mCircle bigCircle'>$</div>
+													</div>
 												</div>
 											</div>
 											<div class='col-xs-3'></div>
@@ -365,13 +370,13 @@
 						<div class='page pgParticipe'>
 							<div class='container'>
 								<div class='row'>
-									<img class="imgBig imgTodos" src="/images/colabore.jpg">
+									<img class="imgBig imgTodos" src="/images/participe.jpg">
 								</div>
 								<div class='row secQueroParticipar'>
 									<div class='col-xs-12'>
 										<div class='row'>
 											<div class='col-xs-12 secTitle'>
-												<p>Quero participar!</p>
+												<p>Como?</p>
 											</div>
 										</div>	
 										<br>
@@ -469,6 +474,27 @@
 				<div class='ContainerHalf pagesHalf'>				
 				</div>				
 			</div>
+		</div>
+	</div>
+
+	<!-- Modal -->
+	<div id="upbModal" class="modal fade upbModal" role="dialog">
+		<div class="modal-dialog">
+
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h2 class="modal-title">Modal Header</h2>
+				</div>
+				<div class="modal-body">
+
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+				</div>
+			</div>
+
 		</div>
 	</div>
 </body>

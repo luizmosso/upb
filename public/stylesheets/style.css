@@ -12,7 +12,7 @@
 }
 .imgContatos {width: 20px !important; height: 20px !important;} 
 .secCestaBasica{ font-size: 12px !important; }
-.money{left: -30px !important; }
+.money{left: -100px !important; }
 .hideRow{ display: block !important; }
 .showedRow{ display: none !important; }
 .imgBigEvento{ padding: 10px; }
@@ -243,7 +243,7 @@ body {
 .secQueroParticipar{
     background-color: #A9CABA;
     color: white;
-    padding-top: 40px;
+    padding-top: 20px;
     padding-bottom: 20px;
     font-size: 18px;
     line-height: 1.6;   
@@ -398,7 +398,9 @@ body {
   background-color: #009444;
   position: relative;
   margin-top: 10px;
-  left: 70px;
+  transition: all 1s;
+  -webkit-transition: all 1s;
+  margin-left: 70px !important;
 }
 
 .smallCircle{
@@ -439,6 +441,8 @@ body {
   position: absolute;
   left: 10px;
   top: 10px;
+  transition: all 1s;
+  -webkit-transition: all 1s;
 }
 
 .lCircle, .rCircle{
@@ -475,7 +479,7 @@ body {
 
 .arrowBox{
   border: 4px dotted #FC5574;
-  width: 35px;  
+  width: 40px;  
   border-left: none;
   border-bottom: none;
   border-radius: 1000px;  
@@ -484,8 +488,8 @@ body {
 
 .arrow{
   position: absolute;
-  bottom: -2px;
-  margin-left: 12px;
+  bottom: -13px;
+  margin-left: 18px;
   z-index: 1000;  
   font-size: 20px;
   color: red;
@@ -507,48 +511,44 @@ body {
   -webkit-transform: rotate(45deg); 
   transform: rotate(45deg);
   background-color: #EF133B;
-  margin-top: 50px;  
-  margin-left: 60px;
-  
-  -webkit-animation-name: animation_heart; 
-  -webkit-animation-duration: 1s; 
-  animation-name: animation_heart;
-  animation-duration: 1s;
-  animation-iteration-count: infinite;  
+  margin-top: 50px;
 }
 
+#heart {
+  width: 100px;
+}
+
+.heartbeat {
+  -webkit-animation-name: animation_heart; 
+  -webkit-animation-duration: 1.3s; 
+  animation-name: animation_heart;
+  animation-duration: 1.3s;
+  animation-iteration-count: infinite;  
+  margin-left: 50px !important;
+}
 
 @-webkit-keyframes animation_heart{
-    1%  {width: 120px; height: 120px}
-    2%  {width: 100px; height: 100px}
-}
-
-@-webkit-keyframes animation_heartChild{
-    1%  {width: 120px; height: 120px}
-    3%  {width: 100px; height: 100px}
-}
-
-@keyframes animation_heart{
-    1%  {width: 110px; height: 110px}
-    3%  {width: 100px; height: 100px}
-}
-
-@keyframes animation_heartChild{
-    1%  {width: 110px; height: 110px}
-    3%  {width: 100px; height: 100px}
+    60%  {transform: scale(1) }
+    70%  {transform: scale(1.2) }
+  80%  {transform: scale(1) }
+  90%  {transform: scale(1.2) }
+  100%  {transform: scale(1) }
 }
 
 
 .heart *{
   opacity: 0;
   background-color: #EF133B;
-  -webkit-transition: width 1s, height 1s, top 1s, left 1s;
-  transition: width 1s, height 1s, top 1s, left 1s;
-  -webkit-animation-name: animation_heartChild; 
-  -webkit-animation-duration: 1s; 
-  animation-name: animation_heartChild;
-  animation-duration: 1s;
-  animation-iteration-count: infinite; 
+  -webkit-transition: 
+    width 1s,
+    height 1s,
+    top 1s,
+    left 1s;
+  transition:
+    width 1s,
+    height 1s,
+    top 1s,
+    left 1s;
 }
 
 .heart .lCircle, 
@@ -556,8 +556,18 @@ body {
   width: 100px;
   height: 100px;
   opacity: 1 !important;
-  -webkit-transition: top 0.2s, left 0.2s, width 1.5s, height 1.5s, opacity 1.5s;
-  transition: top 0.2s, left 0.2s, width 1.5s, height 1.5s, opacity 1.5s;
+  -webkit-transition: 
+    top 0.2s,
+    left 0.2s
+    width 1.5s
+    height 1.5s,
+    opacity 1.5s;
+  transition:
+    top 0.2s,
+    left 0.2s
+    width 1.5s
+    height 1.5s,
+    opacity 1.5s;
 }
 
 .heart .lCircle{
@@ -599,4 +609,32 @@ body {
 
 .secHands .secTitle{
     margin-top: 50px;
+}
+
+.upbModal{
+    font-family: 'PT Sans', sans-serif;  
+}
+
+.upbModal .modal-content{
+    border-radius:  0px;
+    background-color: #fffcef;
+}
+
+.upbModal .modal-body{
+    font-size: 16px;
+    text-align: center;
+}
+
+.upbModal .modal-title{
+    font-weight: bold;
+}
+
+.upbModal .btn{
+    border-radius: 0px !important;
+    background-color:  #333333;
+    color: #fffcef;
+}
+
+.upbModal img{
+    width:  100%;
 }
